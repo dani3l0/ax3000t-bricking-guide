@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>[OpenWrt Wiki] Xiaomi AX3000T</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/_media/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/bootstrap3/images/apple-touch-icon.png" />
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="mediatek,mt7981,128nand,256ram,4port,gigabitethernet,0usb,4core,4x4,hwvlan,802.11ax,wifi6,u-boot,armv8,cortexa53,filogic,serial,12v powered"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="OpenWrt Wiki"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/inbox/toh/xiaomi/ax3000t?do=index" title="Sitemap"/>
+<link rel="manifest" href="/lib/exe/manifest.php"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="/feed.php?mode=list&amp;ns=inbox:toh:xiaomi"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/inbox/toh/xiaomi/ax3000t"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/inbox/toh/xiaomi/ax3000t"/>
+<link rel="canonical" href="https://openwrt.org/inbox/toh/xiaomi/ax3000t"/>
+<link rel="stylesheet" href="/lib/exe/css.php?t=bootstrap3&amp;tseed=4da92e02f7440b5881104fdba9be0c52"/>
+<!--[if gte IE 9]><!-->
+<script >/*<![CDATA[*/var NS='inbox:toh:xiaomi';var JSINFO = {"plugins":{"edittable":{"default columnwidth":""},"interwikipaste":{"patterns":"[{\"shortcut\":\"git\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/git\\\\.openwrt\\\\.org\\\\\\\/\\\\?p\\\\=openwrt%2Fopenwrt\\\\.git&a\\\\=search&h\\\\=HEAD&st\\\\=commit&s\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"paypal\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.paypal\\\\.com\\\\\\\/cgi\\\\-bin\\\\\\\/webscr\\\\?cmd\\\\=_xclick&amp;business\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"flyspray\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/bugs\\\\.openwrt\\\\.org\\\\\\\/index\\\\.php\\\\?do\\\\=details&task_id\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"bugs\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/bugs\\\\.openwrt\\\\.org\\\\\\\/index\\\\.php\\\\?string\\\\=([^ ]+)?&status\\\\[\\\\]\",\"encode\":false},{\"shortcut\":\"go\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.google\\\\.com\\\\\\\/search\\\\?q\\\\=([^ ]+)?&amp;btnI\\\\=lucky\",\"encode\":true},{\"shortcut\":\"amazon\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.amazon\\\\.com\\\\\\\/dp\\\\\\\/([^ ]+)?\\\\?tag\\\\=splitbrain\\\\-20\",\"encode\":true},{\"shortcut\":\"hwinfo\",\"pattern\":\"http\\\\:\\\\\\\/\\\\\\\/en\\\\.techinfodepot\\\\.shoutwiki\\\\.com\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"amazon.de\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.amazon\\\\.de\\\\\\\/dp\\\\\\\/([^ ]+)?\\\\?tag\\\\=splitbrain\\\\-21\",\"encode\":true},{\"shortcut\":\"ebay\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.ebay\\\\.com\\\\\\\/sch\\\\\\\/i\\\\.html\\\\?_nkw\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"ledefs\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/forum\\\\.openwrt\\\\.org\\\\\\\/search\\\\?q\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"owrtfs\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/forum\\\\.openwrt\\\\.org\\\\\\\/search\\\\?q\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpmeta\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/meta\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wp\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/en\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpfr\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/fr\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpde\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/de\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpes\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/es\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wppl\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/pl\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpjp\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/ja\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"wpru\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/ru\\\\.wikipedia\\\\.org\\\\\\\/wiki\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"amazon.uk\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.amazon\\\\.co\\\\.uk\\\\\\\/dp\\\\\\\/([^ ]+)?\",\"encode\":true},{\"shortcut\":\"google\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.google\\\\.com\\\\\\\/search\\\\?q\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"rfc\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/tools\\\\.ietf\\\\.org\\\\\\\/html\\\\\\\/rfc([^ ]+)?\",\"encode\":false},{\"shortcut\":\"google.de\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.google\\\\.de\\\\\\\/search\\\\?q\\\\=([^ ]+)?\",\"encode\":false},{\"shortcut\":\"commit\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/git\\\\.openwrt\\\\.org\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"phpfn\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/secure\\\\.php\\\\.net\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"this\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/openwrt\\\\.org\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"doku\",\"pattern\":\"https\\\\:\\\\\\\/\\\\\\\/www\\\\.dokuwiki\\\\.org\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"callto\",\"pattern\":\"callto\\\\:\\\\\\\/\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"man\",\"pattern\":\"http\\\\:\\\\\\\/\\\\\\\/man\\\\.cx\\\\\\\/([^ ]+)?\",\"encode\":false},{\"shortcut\":\"skype\",\"pattern\":\"skype\\\\:([^ ]+)?\",\"encode\":false},{\"shortcut\":\"user\",\"pattern\":\"\\\\:user\\\\:([^ ]+)?\",\"encode\":false},{\"shortcut\":\"tel\",\"pattern\":\"tel\\\\:([^ ]+)?\",\"encode\":false}]"},"vshare":{"youtube":"youtube\\.com\/.*[&?]v=([a-z0-9_\\-]+)","vimeo":"vimeo\\.com\\\/(\\d+)","slideshare":"slideshare.*id=(\\d+)","dailymotion":"dailymotion\\.com\/video\/([a-z0-9]+)","archiveorg":"archive\\.org\/(?:embed|details)\/([a-zA-Z0-9_\\-]+)","soundcloud":"soundcloud\\.com\/([\\w-]+\/[\\w-]+)","niconico":"nicovideo\\.jp\/watch\/(sm[0-9]+)","bitchute":"bitchute\\.com\\\/video\\\/([a-zA-Z0-9_\\-]+)","coub":"coub\\.com\\\/view\\\/([a-zA-Z0-9_\\-]+)","odysee":"odysee\\.com\/\\$\/(?:embed|download)\/([-%_?=\/a-zA-Z0-9]+)","youku":"v\\.youku\\.com\/v_show\/id_([0-9A-Za-z=]+)\\.html","bilibili":"bilibili\\.com\\\/video\\\/(BV[0-9A-Za-z]+)","msoffice":"(?:office\\.com.*[&?]videoid=([a-z0-9\\-]+))","msstream":"microsoftstream\\.com\\\/video\\\/([a-f0-9\\-]{36})"}},"plugin_imagemap_mldummy":"\/_media\/wiki\/dokuwiki-128.png","plugin_enforcesummary":{"enforce_summary":1,"default_minoredit":0,"enforce_preview":0},"plugin_folded":{"hide":"hide","reveal":"reveal"},"move_renameokay":false,"schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"bootstrap3":{"mode":"show","toc":[],"config":{"collapsibleSections":0,"fixedTopNavbar":1,"showSemanticPopup":0,"sidebarOnNavbar":0,"tagsOnTop":0,"tocAffix":0,"tocCollapseOnScroll":0,"tocCollapsed":0,"tocLayout":"default","useAnchorJS":1,"useAlternativeToolbarIcons":1,"disableSearchSuggest":0}},"id":"inbox:toh:xiaomi:ax3000t","namespace":"inbox:toh:xiaomi","ACT":"show","useHeadingNavigation":1,"useHeadingContent":0};
+/*!]]>*/</script>
+<script src="/lib/exe/jquery.php?tseed=f0349b609f9b91a485af8fd8ecd4aea4" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<script src="/lib/exe/js.php?t=bootstrap3&amp;tseed=4da92e02f7440b5881104fdba9be0c52" defer="defer">/*<![CDATA[*/
+/*!]]>*/</script>
+<!--<![endif]-->
+<style type="text/css">@media screen { body { margin-top: 65px; }  #dw__toc.affix { top: 55px; position: fixed !important; } }</style>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="default dokuwiki mode_show tpl_bootstrap3 dw-page-on-panel dw-table-width dw-fluid-container" data-page-id="inbox:toh:xiaomi:ax3000t"><div class="dokuwiki">
+    <header id="dokuwiki__header" class="dw-container dokuwiki container-fluid mx-5">
+    <!-- navbar -->
+<nav id="dw__navbar" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+
+    <div class="dw-container container-fluid mx-5">
+
+        <div class="navbar-header">
+
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center" href="/start" accesskey="h" title="OpenWrt Wiki"><img id="dw__logo" class="pull-left h-100 mr-4" alt="OpenWrt Wiki" src="/_media/logo.png" /><div class="pull-right"><div id="dw__title">OpenWrt Wiki</div></div></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            
+            
+            <div class="navbar-right" id="dw__navbar_items">
+
+                <!-- navbar-searchform -->
+<form action="/inbox/toh/xiaomi/ax3000t" accept-charset="utf-8" class="navbar-form navbar-left search" id="dw__search" method="get" role="search">
+    <div class="input-group">
+        <input id="qsearch" autocomplete="off" type="search" placeholder="Search" value="" accesskey="f" name="q" class="form-control" title="[F]" />
+        <div class="input-group-btn">
+            <button  class="btn btn-default" type="submit" title="Search">
+                <span class="iconify"  data-icon="mdi:magnify"></span>            </button>
+        </div>
+
+    </div>
+    <input type="hidden" name="do" value="search" />
+</form>
+<!-- /navbar-searchform -->
+<!-- tools-menu -->
+<ul class="nav navbar-nav dw-action-icon" id="dw__tools">
+
+    
+    <li class="dropdown">
+
+        <a href="" class="dropdown-toggle" data-target="#" data-toggle="dropdown" title="" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="iconify"  data-icon="mdi:wrench"></span> <span class="hidden-lg hidden-md hidden-sm">Tools</span> <span class="caret"></span>
+        </a>
+
+        <ul class="dropdown-menu tools" role="menu">
+            
+            <li class="dropdown-header">
+                <span class="iconify"  data-icon="mdi:account"></span> User Tools            </li>
+
+            <li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=login&amp;sectok=" title="Log In" rel="nofollow" class="menuitem login"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 17.25V14H3v-4h7V6.75L15.25 12 10 17.25M8 2h9a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4h2v4h9V4H8v4H6V4a2 2 0 0 1 2-2z"/></svg><span>Log In</span></a></li>
+                        <li class="divider" role="separator"></li>
+            
+        
+            <li class="dropdown-header">
+                <span class="iconify"  data-icon="mdi:toolbox"></span> Site Tools            </li>
+
+            <li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=recent" title="Recent Changes [r]" rel="nofollow" accesskey="r" class="menuitem recent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 13h1.5v2.82l2.44 1.41-.75 1.3L15 16.69V13m4-5H5v11h4.67c-.43-.91-.67-1.93-.67-3a7 7 0 0 1 7-7c1.07 0 2.09.24 3 .67V8M5 21a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h1V1h2v2h8V1h2v2h1a2 2 0 0 1 2 2v6.1c1.24 1.26 2 2.99 2 4.9a7 7 0 0 1-7 7c-1.91 0-3.64-.76-4.9-2H5m11-9.85A4.85 4.85 0 0 0 11.15 16c0 2.68 2.17 4.85 4.85 4.85A4.85 4.85 0 0 0 20.85 16c0-2.68-2.17-4.85-4.85-4.85z"/></svg><span>Recent Changes</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=media&amp;ns=inbox%3Atoh%3Axiaomi" title="Media Manager" rel="nofollow" class="menuitem media"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 15l4.5-6 3.5 4.5 2.5-3L21 15m1-11h-8l-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M2 6H0v14a2 2 0 0 0 2 2h18v-2H2V6z"/></svg><span>Media Manager</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=index" title="Sitemap [x]" rel="nofollow" accesskey="x" class="menuitem index"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 3h6v4H3V3m12 7h6v4h-6v-4m0 7h6v4h-6v-4m-2-4H7v5h6v2H5V9h2v2h6v2z"/></svg><span>Sitemap</span></a></li>
+                        <li class="divider" role="separator"></li>
+            
+        
+            <li class="dropdown-header">
+                <span class="iconify"  data-icon="mdi:file-document-outline"></span> Page Tools            </li>
+
+            <li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=edit" title="Show pagesource [v]" rel="nofollow" accesskey="v" class="menuitem source"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5l3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41-3.74 3.74m11.16 0l-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41 3.74-3.74z"/></svg><span>Show pagesource</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=revisions" title="Old revisions [o]" rel="nofollow" accesskey="o" class="menuitem revs"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"/></svg><span>Old revisions</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=backlink" title="Backlinks" rel="nofollow" class="menuitem backlink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg><span>Backlinks</span></a></li><li class="action"><a href="#dokuwiki__top" title="Back to top [t]" rel="nofollow" accesskey="t" class="menuitem top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg><span>Back to top</span></a></li>
+            
+                </ul>
+    </li>
+
+    
+</ul>
+<!-- /tools-menu -->
+
+                <ul class="nav navbar-nav">
+
+                    
+                                        <li>
+                        <span class="dw__actions dw-action-icon">
+                        <a href="/inbox/toh/xiaomi/ax3000t?do=login&amp;sectok=" title="Log In" rel="nofollow" class="menuitem login btn btn-default navbar-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 17.25V14H3v-4h7V6.75L15.25 12 10 17.25M8 2h9a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4h2v4h9V4H8v4H6V4a2 2 0 0 1 2-2z"/></svg><span class=""> Log In</span></a>                        </span>
+                    </li>
+                    
+                </ul>
+
+                
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!-- navbar -->
+    </header>
+
+    <a name="dokuwiki__top" id="dokuwiki__top"></a>
+
+    <main role="main" class="dw-container pb-5 dokuwiki container-fluid mx-5">
+
+        <div id="dokuwiki__pageheader">
+
+            
+            <!-- breadcrumbs -->
+<nav id="dw__breadcrumbs" class="small">
+
+    <hr/>
+
+        <div class="dw__youarehere">
+        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li>You are here</li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/start"   itemprop="item"  title="start"><span itemprop="name"><span class="iconify"  data-icon="mdi:home"></span><span class="sr-only">Home</span></span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a itemprop="item"  href="/inbox/start" class="wikilink1" title="inbox:start" >Inbox</a></span><meta itemprop="position" content="2" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a itemprop="item"  href="/inbox/toh/start" class="wikilink1" title="inbox:toh:start" >toh</a></span><meta itemprop="position" content="3" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a itemprop="item"  href="/inbox/toh/xiaomi/start" class="wikilink2" title="inbox:toh:xiaomi:start" rel="nofollow" >xiaomi</a></span><meta itemprop="position" content="4" /></li><li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><a itemprop="item" href="/inbox/toh/xiaomi/ax3000t" class="wikilink1" title="inbox:toh:xiaomi:ax3000t" >Xiaomi AX3000T</a></span><meta itemprop="position" content="5" /></li></ol>    </div>
+    
+    
+    <hr/>
+
+</nav>
+<!-- /breadcrumbs -->
+
+            <p class="text-right">
+                            </p>
+
+            <div id="dw__msgarea" class="small">
+                            </div>
+
+        </div>
+
+        <div class="row">
+
+            <!-- sidebar -->
+<aside id="dokuwiki__aside" class="dw__sidebar col-sm-3 col-md-2 hidden-print">
+    <div class="dw-sidebar-content">
+        <div class="dw-sidebar-title hidden-lg hidden-md hidden-sm" data-toggle="collapse" data-target="#dokuwiki__aside .dw-sidebar-body">
+            <span class="iconify"  data-icon="mdi:view-list"></span> Learn about OpenWrt        </div>
+        <div class="dw-sidebar-body collapse in small">
+            <h4 id="learn_about_openwrt" class=" page-header">Learn about OpenWrt</h4>
+<div class="level4">
+<ul class="nav  nav-pills nav-stacked">
+<li class="level1"> <a href="/supported_devices" class="wikilink1" title="supported_devices" >Supported devices</a>
+</li>
+<li class="level1"> <a href="/packages/start" class="wikilink1" title="packages:start" >Packages</a>
+</li>
+<li class="level1"> <a href="/downloads" class="wikilink1" title="downloads" >Downloads</a>
+</li>
+<li class="level1 node"> <a href="/docs/start" class="wikilink1" title="docs:start" >Documentation</a>
+<ul class="nav  nav-pills nav-stacked">
+<li class="level2"> <a href="/docs/guide-quick-start/start" class="wikilink1" title="docs:guide-quick-start:start" >Quick start guide</a>
+</li>
+<li class="level2"> <a href="/docs/guide-user/start" class="wikilink1" title="docs:guide-user:start" >User guide</a>
+</li>
+<li class="level2"> <a href="/docs/guide-developer/start" class="wikilink1" title="docs:guide-developer:start" >Developer guide</a>
+</li>
+</ul>
+</li>
+<li class="level1"> <a href="/docs/guide-developer/security" class="wikilink1" title="docs:guide-developer:security" >Security</a>
+</li>
+<li class="level1"> <a href="/faq" class="wikilink1" title="faq" >FAQ</a>
+</li>
+<li class="level1"> <a href="https://forum.openwrt.org/" class="urlextern" title="https://forum.openwrt.org/" rel="ugc nofollow">Forum</a>
+</li>
+</ul>
+
+</div>
+
+<h4 id="contributing" class=" page-header">Contributing</h4>
+<div class="level4">
+<ul class="nav  nav-pills nav-stacked">
+<li class="level1"> <a href="/submitting-patches" class="wikilink1" title="submitting-patches" >Submitting patches</a>
+</li>
+<li class="level1"> <a href="/bugs" class="wikilink1" title="bugs" >Reporting bugs</a>
+</li>
+<li class="level1"> <a href="/wiki/wikirules" class="wikilink1" title="wiki:wikirules" >Contributing to wiki</a>
+</li>
+</ul>
+
+</div>
+
+<h4 id="project" class=" page-header">Project</h4>
+<div class="level4">
+<ul class="nav  nav-pills nav-stacked">
+<li class="level1"> <a href="/about" class="wikilink1" title="about" >About OpenWrt</a>
+</li>
+<li class="level1"> <a href="/rules" class="wikilink1" title="rules" >Rules</a>
+</li>
+<li class="level1"> <a href="/infrastructure" class="wikilink1" title="infrastructure" >Infrastructure</a>
+</li>
+<li class="level1"> <a href="/donate" class="wikilink1" title="donate" >Donate</a>
+</li>
+<li class="level1"> <a href="/merchandise" class="wikilink1" title="merchandise" >Merchandise</a>
+</li>
+<li class="level1"> <a href="/wiki/start" class="wikilink1" title="wiki:start" >Website</a>
+</li>
+<li class="level1"> <a href="/trademark" class="wikilink1" title="trademark" >Trademark policy</a>
+</li>
+<li class="level1"> <a href="/license" class="wikilink1" title="license" >License</a>
+</li>
+<li class="level1"> <a href="/contact" class="wikilink1" title="contact" >Contacts</a>
+</li>
+</ul>
+
+</div>        </div>
+    </div>
+</aside>
+<!-- /sidebar -->
+
+            <article id="dokuwiki__content" class="col-sm-9 col-md-10 " itemscope itemtype="http://schema.org/TechArticle" itemref="dw__license">
+
+                
+<!-- page-tools -->
+<nav id="dw__pagetools" class="hidden-print">
+    <div class="tools panel panel-default">
+        <ul class="nav nav-stacked nav-pills text-muted">
+            <li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=edit" title="Show pagesource [v]" rel="nofollow" accesskey="v" class="menuitem source"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5l3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41-3.74 3.74m11.16 0l-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41 3.74-3.74z"/></svg><span>Show pagesource</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=revisions" title="Old revisions [o]" rel="nofollow" accesskey="o" class="menuitem revs"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"/></svg><span>Old revisions</span></a></li><li class="action"><a href="/inbox/toh/xiaomi/ax3000t?do=backlink" title="Backlinks" rel="nofollow" class="menuitem backlink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg><span>Backlinks</span></a></li><li class="action"><a href="#dokuwiki__top" title="Back to top [t]" rel="nofollow" accesskey="t" class="menuitem top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg><span>Back to top</span></a></li>        </ul>
+    </div>
+</nav>
+<!-- /page-tools -->
+
+                <div class="panel panel-default px-3 py-2" itemprop="articleBody">
+                    <div class="page panel-body">
+
+                        <!-- page-icons -->
+<div class="dw-page-icons pull-right hidden-print">
+    <ul class="list-inline">
+        </ul>
+</div>
+
+<span class="clearfix"></span>
+
+<!-- /page-icons -->
+
+<div class="help modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body px-5"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="dw-content-page "><script>JSINFO.bootstrap3.toc = [{"link":"#xiaomi_ax3000t","title":"Xiaomi AX3000T","level":1},{"link":"#supported_versions","title":"Supported Versions","level":2},{"link":"#hardware_highlights","title":"Hardware Highlights","level":2},{"link":"#installation","title":"Installation","level":2},{"link":"#flash_instructions","title":"Flash instructions","level":3},{"link":"#change_to_openwrt_u-boot","title":"Change to OpenWrt U-Boot","level":3},{"link":"#go_back_to_stock_from_openwrt_u-boot","title":"Go Back to stock from Openwrt U-Boot","level":3},{"link":"#go_back_to_stock_from_default_layout_openwrt","title":"Go Back to stock from default layout Openwrt","level":3},{"link":"#oem_installation_using_the_tftp_method","title":"OEM installation using the TFTP method","level":3},{"link":"#upgrading_openwrt","title":"Upgrading OpenWrt","level":2},{"link":"#luci_web_upgrade_process","title":"LuCI Web Upgrade Process","level":3},{"link":"#terminal_upgrade_process","title":"Terminal Upgrade Process","level":3},{"link":"#downgrading_stock_firmware","title":"Downgrading stock firmware","level":2},{"link":"#debricking","title":"Debricking","level":2},{"link":"#recover_bricked_bootloader","title":"Recover bricked bootloader","level":3},{"link":"#tftp_instructions_for_the_stock_layout","title":"TFTP instructions for the stock layout","level":3},{"link":"#failsafe_mode","title":"Failsafe mode","level":2},{"link":"#basic_configuration","title":"Basic configuration","level":2},{"link":"#specific_configuration","title":"Specific Configuration","level":2},{"link":"#network_interfaces","title":"Network interfaces","level":3},{"link":"#switch_ports_for_vlans","title":"Switch Ports (for VLANs)","level":3},{"link":"#buttons","title":"Buttons","level":3},{"link":"#hardware","title":"Hardware","level":2},{"link":"#info","title":"Info","level":3},{"link":"#photos","title":"Photos","level":3},{"link":"#opening_the_case","title":"Opening the case","level":3},{"link":"#serial","title":"Serial","level":3},{"link":"#jtag","title":"JTAG","level":3},{"link":"#bootloader_mods","title":"Bootloader mods","level":2},{"link":"#hardware_mods","title":"Hardware mods","level":2},{"link":"#bootlogs","title":"Bootlogs","level":2},{"link":"#notes","title":"Notes","level":2},{"link":"#tags","title":"Tags","level":2}];</script>
+<!-- TOC START -->
+<div class="dw-toc hidden-print">
+<nav id="dw__toc" role="navigation" class="toc-panel panel panel-default small">
+<h6 data-toggle="collapse" data-target="#dw__toc .toc-body" title="Table of Contents" class="panel-heading toc-title"><span class="iconify"  data-icon="mdi:view-list"></span> <span>Table of Contents</span> <i class="caret"></i></h6>
+<div class="panel-body  toc-body collapse in">
+<ul class="nav toc">
+<li class="level1"><a href="#xiaomi_ax3000t">Xiaomi AX3000T</a>
+<ul class="nav toc">
+<li class="level2"><a href="#supported_versions">Supported Versions</a></li>
+<li class="level2"><a href="#hardware_highlights">Hardware Highlights</a></li>
+<li class="level2"><a href="#installation">Installation</a>
+<ul class="nav toc">
+<li class="level3"><a href="#flash_instructions">Flash instructions</a></li>
+<li class="level3"><a href="#change_to_openwrt_u-boot">Change to OpenWrt U-Boot</a></li>
+<li class="level3"><a href="#go_back_to_stock_from_openwrt_u-boot">Go Back to stock from Openwrt U-Boot</a></li>
+<li class="level3"><a href="#go_back_to_stock_from_default_layout_openwrt">Go Back to stock from default layout Openwrt</a></li>
+<li class="level3"><a href="#oem_installation_using_the_tftp_method">OEM installation using the TFTP method</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#upgrading_openwrt">Upgrading OpenWrt</a>
+<ul class="nav toc">
+<li class="level3"><a href="#luci_web_upgrade_process">LuCI Web Upgrade Process</a></li>
+<li class="level3"><a href="#terminal_upgrade_process">Terminal Upgrade Process</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#downgrading_stock_firmware">Downgrading stock firmware</a></li>
+<li class="level2"><a href="#debricking">Debricking</a>
+<ul class="nav toc">
+<li class="level3"><a href="#recover_bricked_bootloader">Recover bricked bootloader</a></li>
+<li class="level3"><a href="#tftp_instructions_for_the_stock_layout">TFTP instructions for the stock layout</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#failsafe_mode">Failsafe mode</a></li>
+<li class="level2"><a href="#basic_configuration">Basic configuration</a></li>
+<li class="level2"><a href="#specific_configuration">Specific Configuration</a>
+<ul class="nav toc">
+<li class="level3"><a href="#network_interfaces">Network interfaces</a></li>
+<li class="level3"><a href="#switch_ports_for_vlans">Switch Ports (for VLANs)</a></li>
+<li class="level3"><a href="#buttons">Buttons</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#hardware">Hardware</a>
+<ul class="nav toc">
+<li class="level3"><a href="#info">Info</a></li>
+<li class="level3"><a href="#photos">Photos</a></li>
+<li class="level3"><a href="#opening_the_case">Opening the case</a></li>
+<li class="level3"><a href="#serial">Serial</a></li>
+<li class="level3"><a href="#jtag">JTAG</a></li>
+</ul>
+</li>
+<li class="level2"><a href="#bootloader_mods">Bootloader mods</a></li>
+<li class="level2"><a href="#hardware_mods">Hardware mods</a></li>
+<li class="level2"><a href="#bootlogs">Bootlogs</a></li>
+<li class="level2"><a href="#notes">Notes</a></li>
+<li class="level2"><a href="#tags">Tags</a></li>
+</ul></li>
+</ul>
+</div>
+</nav>
+</div>
+<!-- TOC END -->
+<!-- content --><div class="dw-content"><h1 class="sectionedit1 page-header pb-3 mb-4 mt-0" id="xiaomi_ax3000t">Xiaomi AX3000T</h1>
+<div class="level1">
+<div class="wrap_center wrap_round wrap_important plugin_wrap" style="width: 60%;">
+<p>
+<strong>Warning!</strong> Don&#039;t brick your router!
+</p>
+
+<p>
+AX3000T routers come with either <code>Winbond</code> or <code>ESMT</code> NAND flash chip. Devices with the <code>Winbond</code> NAND chip are supported <strong>only</strong> by <a href="/releases/snapshot" class="wikilink1" title="releases:snapshot" data-wiki-id="releases:snapshot">Snapshot</a> version, while the <code>ESMT</code> NAND chip is supported by both the official stable OpenWrt <a href="/releases/23.05/notes-23.05.5" class="wikilink1" title="releases:23.05:notes-23.05.5" data-wiki-id="releases:23.05:notes-23.05.5">23.05.5</a> image and Snapshot. <strong>Don´t try to flash router without checking your chip!</strong>: <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1424?u=alexq" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1424?u=alexq" rel="ugc nofollow">details</a>. 
+</p>
+</div><div class="wrap_center wrap_round wrap_important plugin_wrap" style="width: 60%;">
+<p>
+New AX3000T devices with stock firmware version 1.0.84 or newer have received updated hardware (<a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1176" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1176" rel="ugc nofollow">AN8855 switch</a>) that is temporarily incompatible with the OpenWrt image until support is added. There is no possibility to install OpenWrt on RD03 for such devices, see <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1143?" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/1143?" rel="ugc nofollow">link</a>.
+</p>
+</div>
+<p>
+The Xiaomi AX3000T router supports 2 802.11ax streams on both 2.4GHz @40MHz and 5GHz @160MHz for a combined 3000Mbps wireless speed. It is based on the MediaTek MT7981 SoC.
+</p>
+
+<p>
+There are two versions of the Xiaomi AX3000T router:
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> model <strong>RD03</strong>: Chinese version</div>
+</li>
+<li class="level1"><div class="li"> model <strong>RD23</strong>: International (Global) version.</div>
+</li>
+</ul>
+
+<p>
+Both versions have exactly the same hardware, and the only difference is the version of the stock firmware (which is region-locked).
+</p>
+
+<p>
+<a href="/_detail/media/xiaomi/xiaomi_ax3000t.jpg?id=inbox%3Atoh%3Axiaomi%3Aax3000t" class="media" title="media:xiaomi:xiaomi_ax3000t.jpg"><img src="/_media/media/xiaomi/xiaomi_ax3000t.jpg" class="media img-responsive" loading="lazy" title="AX3000T" alt="AX3000T" /></a>
+</p>
+
+<p>
+<strong>Support Forums</strong> <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490" rel="ugc nofollow">https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490</a>
+</p>
+
+<p>
+There are 3 known OpenWrt installation methods for the Xiaomi AX3000T:
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1 node"><div class="li"> <strong><abbr title="Secure Shell">SSH</abbr> exploit method</strong>: the method involves executing cURL commands on the stock router firmware that allows enabling <abbr title="Secure Shell">SSH</abbr> access, thus making OpenWrt installation possible. This method is suitable for both <strong>RD23</strong> (International version) and <strong>RD03</strong> (Chinese version) of the Xiaomi AX3000T router. For details, please refer to the <a href="/inbox/toh/xiaomi/ax3000t#installation" class="wikilink1" title="inbox:toh:xiaomi:ax3000t" data-wiki-id="inbox:toh:xiaomi:ax3000t">Installation</a> section below. </div>
+<ul class=" fix-media-list-overlap">
+<li class="level2"><div class="li"> note: <em>this method is not supported by stock firmware version 1.0.47 (CN).</em></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>UART flash method</strong>: the method which requires opening the device, connecting a UART cable, and following a specific set of steps. This process is recommended only for advanced users and may soft brick your device. The instructions for this process are available in this post: <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/420?u=alexq" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/420?u=alexq" rel="ugc nofollow">link to owrt forum</a>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Firmware downgrade method</strong> (legacy): the method requires installing a vulnerable version of the stock firmware, which allows to proceed with commands to enable <abbr title="Secure Shell">SSH</abbr> access in a way similar to the “<abbr title="Secure Shell">SSH</abbr> exploit method”. This method is applicable only for <strong>RD03</strong> (Chinese version). For details, please refer to the <a href="/inbox/toh/xiaomi/ax3000t#downgrading_stock_firmware" class="wikilink1" title="inbox:toh:xiaomi:ax3000t" data-wiki-id="inbox:toh:xiaomi:ax3000t">Downgrading stock firmware</a> section.</div>
+</li>
+</ul>
+
+<p>
+Stock firmware compatibility and OpenWrt installation methods:
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> Stock Firmware ver.             </th><th class="col1 leftalign">Model  </th><th class="col2 leftalign"> OpenWrt Installation Method     </th><th class="col3 leftalign"> OpenWrt Supported     </th><th class="col4 leftalign"> Stock Firmware <abbr title="Uniform Resource Locator">URL</abbr>  </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> 1.0.31 (INT)         </td><td class="col1"> RD23 </td><td class="col2 leftalign"> <abbr title="Secure Shell">SSH</abbr> exploit              </td><td class="col3 centeralign">   YES*             </td><td class="col4 leftalign"> -                                          </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 1.0.49 (INT)         </td><td class="col1"> RD23 </td><td class="col2 leftalign"> <abbr title="Secure Shell">SSH</abbr> exploit              </td><td class="col3 centeralign">   YES*             </td><td class="col4"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd23/miwifi_rd23_firmware_153e1_1.0.49_INT.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd23/miwifi_rd23_firmware_153e1_1.0.49_INT.bin" rel="ugc nofollow">miwifi_rd23_firmware_153e1_1.0.49_INT.bin</a> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 1.0.47 (CN)          </td><td class="col1"> RD03 </td><td class="col2 leftalign"> Firmware downgrade       </td><td class="col3 centeralign">   YES*             </td><td class="col4"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin" rel="ugc nofollow">miwifi_rd03_firmware_ef0ee_1.0.47.bin</a> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 1.0.64 (CN)          </td><td class="col1"> RD03 </td><td class="col2 leftalign"> Any                      </td><td class="col3 centeralign">   YES*             </td><td class="col4 leftalign"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_14680_1.0.64.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_14680_1.0.64.bin" rel="ugc nofollow">miwifi_rd03_firmware_14680_1.0.64.bin</a>  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> 1.0.84 (CN)          </td><td class="col1"> RD03 </td><td class="col2 leftalign"><abbr title="Secure Shell">SSH</abbr> exploit              </td><td class="col3 rightalign">   <strong>Not yet</strong> (<code>AN8855</code> hardware) </td><td class="col4"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_f85f9_1.0.84.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_f85f9_1.0.84.bin" rel="ugc nofollow">miwifi_rd03_firmware_f85f9_1.0.84.bin</a></td>
+	</tr>
+</table></div>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> *note: devices with the <code>Winbond</code> NAND chip are supported by <a href="/releases/snapshot" class="wikilink1" title="releases:snapshot" data-wiki-id="releases:snapshot">Snapshot</a> version only.</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit7 page-header pb-3 mb-4 mt-0" id="supported_versions">Supported Versions</h2>
+<div class="level2">
+
+<p>
+<!-- ToH: {
+  "source": "json",
+  "dom": "t",
+  "paging": false,
+  "rotate": true,
+  "shownColumns": ["brand", "model", "version", "supportedcurrentrel", "oemdevicehomepageurl", "forumsearch", "deviceid"],
+  "filterColumns": {"brand": "^Xiaomi$", "model": "^AX3000T$"}
+} -->
+</p>
+
+</div>
+
+<h2 class="sectionedit8 page-header pb-3 mb-4 mt-0" id="hardware_highlights">Hardware Highlights</h2>
+<div class="level2">
+
+<p>
+<!-- ToH: {
+  "source": "json",
+  "dom": "t",
+  "paging": false,
+  "rotate": true,
+  "shownColumns": ["model", "version", "cpu", "cpumhz", "cpucores", "flashmb", "rammb", "wlanhardware", "wlan24ghz", "wlan50ghz", "ethernet100mports", "ethernet1gports", "modem", "usbports"],
+  "filterColumns": {"brand": "^Xiaomi$", "model": "^AX3000T$"}
+} -->
+</p>
+
+</div>
+
+<h2 class="sectionedit9 page-header pb-3 mb-4 mt-0" id="installation">Installation</h2>
+<div class="level2">
+
+</div>
+
+<h3 class="sectionedit10 page-header pb-3 mb-4 mt-0" id="flash_instructions">Flash instructions</h3>
+<div class="level3">
+
+<p>
+1. Get ssh access. 
+</p>
+<pre class="code">#!/bin/bash
+
+if [ &quot;$1&quot; = &quot;&quot; ]; then
+  echo &quot;Usage: $0 [stok]&quot;
+  echo &quot;e.g. $0 e6ea114ba2cddb0c70fbbc417bb2706c&quot;
+  echo &quot;Copy the stok-string from a browser&#039;s URL-line, while being logged in to the router&quot;
+  exit 1
+fi
+
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/xqsystem/start_binding&quot; -d &quot;uid=1234&amp;key=1234&#039;%0Anvram%20set%20ssh_en%3D1&#039;&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/xqsystem/start_binding&quot; -d &quot;uid=1234&amp;key=1234&#039;%0Anvram%20commit&#039;&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/xqsystem/start_binding&quot; -d &quot;uid=1234&amp;key=1234&#039;%0Ased%20-i%20&#039;s%2Fchannel%3D.*%2Fchannel%3D%22debug%22%2Fg&#039;%20%2Fetc%2Finit.d%2Fdropbear&#039;&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/xqsystem/start_binding&quot; -d &quot;uid=1234&amp;key=1234&#039;%0A%2Fetc%2Finit.d%2Fdropbear%20start&#039;&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/xqsystem/start_binding&quot; -d &quot;uid=1234&amp;key=1234&#039;%0Apasswd%20-d%20root%0A&#039;&quot;</pre>
+
+<p>
+2. Backup stock partitions
+</p>
+<pre class="code">ssh -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa -v root@192.168.31.1
+nanddump -f /tmp/BL2.bin /dev/mtd1
+nanddump -f /tmp/Nvram.bin /dev/mtd2
+nanddump -f /tmp/Bdata.bin /dev/mtd3
+nanddump -f /tmp/Factory.bin /dev/mtd4
+nanddump -f /tmp/FIP.bin /dev/mtd5
+nanddump -f /tmp/ubi.bin /dev/mtd8
+nanddump -f /tmp/KF.bin /dev/mtd12</pre>
+
+<p>
+Then transfer them to your computer in a safe place.
+</p>
+
+<p>
+To copy you can run netcat on your computer (in this case the computer&#039;s <abbr title="Internet Protocol">IP</abbr> is 192.168.31.55):
+</p>
+<pre class="code">$ netcat -l 1234 | tar xvf -</pre>
+
+<p>
+And send the data from the router:
+</p>
+<pre class="code">root@XiaoQiang:~# tar cf - /tmp/*.bin | nc 192.168.31.55 1234</pre>
+
+<p>
+3. Get firmware information `cat /proc/cmdline`
+</p>
+
+<p>
+4. Copy openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-initramfs-factory.ubi to <strong>/tmp</strong> and flash
+</p>
+
+<p>
+If <strong>firmware=0</strong>
+</p>
+<pre class="code">ubiformat /dev/mtd9 -y -f /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-initramfs-factory.ubi
+nvram set boot_wait=on
+nvram set uart_en=1
+nvram set flag_boot_rootfs=1
+nvram set flag_last_success=1
+nvram set flag_boot_success=1
+nvram set flag_try_sys1_failed=0
+nvram set flag_try_sys2_failed=0
+nvram commit
+reboot</pre>
+
+<p>
+If <strong>firmware=1</strong>
+</p>
+<pre class="code">ubiformat /dev/mtd8 -y -f /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-initramfs-factory.ubi
+nvram set boot_wait=on
+nvram set uart_en=1
+nvram set flag_boot_rootfs=0
+nvram set flag_last_success=0
+nvram set flag_boot_success=1
+nvram set flag_try_sys1_failed=0
+nvram set flag_try_sys2_failed=0
+nvram commit
+reboot</pre>
+
+<p>
+Then reboot your router, it should boot to the OpenWrt initramfs system now. To be sure to use one of OpenWrt&#039;s <abbr title="Local Area Network">LAN</abbr> ports (not <abbr title="Wide Area Network">WAN</abbr> port), plug the ethernet cable into one of the middle ports, if the cable is not already plugged there (original FW dynamically assigns <abbr title="Local Area Network">LAN</abbr>/<abbr title="Wide Area Network">WAN</abbr>).
+</p>
+
+<p>
+Note that you should configure the computer&#039;s network to use <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr>. You can use wireshark if things don&#039;t work.
+This command will connect you to the OpenWrt system:
+</p>
+<pre class="code">ssh root@192.168.1.1</pre>
+
+<p>
+5. Copy openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-squashfs-sysupgrade.bin to <strong>/tmp</strong> and flash:
+</p>
+<pre class="code">sysupgrade -n /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-squashfs-sysupgrade.bin</pre>
+
+<p>
+6. Run command to modify /etc/rc.local file with nvram settings: 
+</p>
+<pre class="code">sed -i &#039;/exit 0/i sleep 5\nfw_setenv flag_try_sys1_failed 0&#039; /etc/rc.local</pre>
+
+</div>
+
+<h3 class="sectionedit11 page-header pb-3 mb-4 mt-0" id="change_to_openwrt_u-boot">Change to OpenWrt U-Boot</h3>
+<div class="level3">
+<div class="wrap_info plugin_wrap">
+<p>
+ Default available router space is <strong>60Mb</strong>. It&#039;s possible to increase this size by replacing stock bootloader with the OpenWrt U-Boot bootloader. Please <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/721" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/721" rel="ugc nofollow">understand</a> the benefits and risks involved. 
+OpenWrt U-Boot provides faster boot loading and more space: <strong>75Mb</strong> (with recovery) or <strong>85Mb</strong> (without recovery).
+</p>
+</div>
+<p>
+1. Flash openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-factory.ubi
+</p>
+<pre class="code">ubiformat /dev/mtd8 -y -f /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-factory.ubi</pre>
+<pre class="code">reboot</pre>
+
+<p>
+2. Install kmod-mtd-rw
+</p>
+<pre class="code">opkg update &amp;&amp; opkg install kmod-mtd-rw</pre>
+<pre class="code">insmod /lib/modules/$(uname -r)/mtd-rw.ko i_want_a_brick=1</pre>
+
+<p>
+3. Format ubi and create new ubootenv volume
+</p>
+<pre class="code">ubidetach -p /dev/mtd8; ubiformat /dev/mtd8 -y; ubiattach -p /dev/mtd8
+ubimkvol /dev/ubi0 -n 0 -N ubootenv -s 128KiB
+ubimkvol /dev/ubi0 -n 1 -N ubootenv2 -s 128KiB</pre>
+
+<p>
+4. *(Optional <strong>-10Mb</strong> free space) Add recovery boot feature.*
+</p>
+<pre class="code">ubimkvol /dev/ubi0 -n 2 -N recovery -s 10MiB
+ubiupdatevol /dev/ubi0_2 /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-recovery.itb</pre>
+
+<p>
+5. Flash Openwrt U-Boot
+</p>
+<pre class="code">mtd write /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-preloader.bin BL2
+mtd write /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-bl31-uboot.fip FIP</pre>
+
+<p>
+6. Flash openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-squashfs-sysupgrade.itb
+</p>
+<pre class="code">sysupgrade -n /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-squashfs-sysupgrade.itb</pre>
+
+</div>
+
+<h3 class="sectionedit14 page-header pb-3 mb-4 mt-0" id="go_back_to_stock_from_openwrt_u-boot">Go Back to stock from Openwrt U-Boot</h3>
+<div class="level3">
+
+<p>
+1. Force flash openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-recovery.itb
+</p>
+<pre class="code">sysupgrade -F -n /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-recovery.itb</pre>
+
+<p>
+2. Format ubi and Nvram
+</p>
+<pre class="code">ubidetach -p /dev/mtd8; ubiformat /dev/mtd8 -y; ubiattach -p /dev/mtd8
+mtd erase Nvram</pre>
+
+<p>
+3. Install kmod-mtd-rw
+</p>
+<pre class="code">opkg update &amp;&amp; opkg install kmod-mtd-rw</pre>
+<pre class="code">insmod /lib/modules/$(uname -r)/mtd-rw.ko i_want_a_brick=1</pre>
+
+<p>
+4. Flash stock images from backup
+</p>
+<pre class="code">mtd write /tmp/BL2.bin BL2
+mtd write /tmp/FIP.bin FIP
+mtd write /tmp/ubi.bin ubi</pre>
+
+<p>
+Then reboot your router, waiting it finished rollback in minutes.
+</p>
+
+</div>
+
+<h3 class="sectionedit15 page-header pb-3 mb-4 mt-0" id="go_back_to_stock_from_default_layout_openwrt">Go Back to stock from default layout Openwrt</h3>
+<div class="level3">
+<pre class="code">ubiformat /dev/mtd8 -y -f /tmp/ubi.bin</pre>
+
+<p>
+Then reboot your router, waiting it finished rollback in minutes.
+</p>
+
+</div>
+
+<h3 class="sectionedit16 page-header pb-3 mb-4 mt-0" id="oem_installation_using_the_tftp_method">OEM installation using the TFTP method</h3>
+<div class="level3">
+
+<p>
+→  <a href="/docs/guide-user/installation/generic.flashing.tftp" class="wikilink1" title="docs:guide-user:installation:generic.flashing.tftp" data-wiki-id="docs:guide-user:installation:generic.flashing.tftp">generic.flashing.tftp</a>
+</p>
+
+</div>
+
+<h4 id="specific_values_needed_for_tftp">Specific values needed for tftp</h4>
+<div class="level4">
+<div class="wrap_box plugin_wrap">
+<p>
+<img src="/lib/images/smileys/fixme.svg" class="icon smiley" alt="FIXME" /> Enter values for “FILL-IN” below
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<tr class="row0">
+		<th class="col0 leftalign"> Bootloader tftp server <abbr title="Internet Protocol version 4">IPv4</abbr> address  </th><td class="col1 leftalign"> FILL-IN   </td>
+	</tr>
+	<tr class="row1">
+		<th class="col0 leftalign"> Bootloader MAC address (special)     </th><td class="col1 leftalign"> FILL-IN   </td>
+	</tr>
+	<tr class="row2">
+		<th class="col0 leftalign"> Firmware tftp image                  </th><td class="col1"> <a href="/downloads" class="wikilink1" title="downloads" data-wiki-id="downloads">Latest OpenWrt release</a> (<strong><code>NOTE:</code></strong> Name must contain <em>“tftp”</em>) </td>
+	</tr>
+	<tr class="row3">
+		<th class="col0 leftalign"> <abbr title="Trivial File Transfer Protocol">TFTP</abbr> transfer window                 </th><td class="col1 leftalign"> FILL-IN seconds                                </td>
+	</tr>
+	<tr class="row4">
+		<th class="col0 leftalign"> <abbr title="Trivial File Transfer Protocol">TFTP</abbr> window start                    </th><td class="col1 leftalign"> approximately FILL-IN seconds after power on   </td>
+	</tr>
+	<tr class="row5">
+		<th class="col0 leftalign"> <abbr title="Trivial File Transfer Protocol">TFTP</abbr> client required <abbr title="Internet Protocol">IP</abbr> address      </th><td class="col1 leftalign"> FILL-IN                                        </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h2 class="sectionedit20 page-header pb-3 mb-4 mt-0" id="upgrading_openwrt">Upgrading OpenWrt</h2>
+<div class="level2">
+
+<p>
+→  <a href="/docs/guide-user/installation/generic.sysupgrade" class="wikilink1" title="docs:guide-user:installation:generic.sysupgrade" data-wiki-id="docs:guide-user:installation:generic.sysupgrade">generic.sysupgrade</a>
+</p>
+
+</div>
+
+<h3 class="sectionedit21 page-header pb-3 mb-4 mt-0" id="luci_web_upgrade_process">LuCI Web Upgrade Process</h3>
+<div class="level3">
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Browse to <code>http://192.168.1.1/cgi-bin/luci/admin/system/flash</code> LuCI Upgrade <abbr title="Uniform Resource Locator">URL</abbr></div>
+</li>
+<li class="level1"><div class="li"> Upload image file for sysupgrade to LuCI</div>
+</li>
+<li class="level1"><div class="li"> Wait for reboot</div>
+</li>
+</ul>
+
+</div>
+
+<h3 class="sectionedit22 page-header pb-3 mb-4 mt-0" id="terminal_upgrade_process">Terminal Upgrade Process</h3>
+<div class="level3">
+
+<p>
+If you don&#039;t have a <abbr title="Graphical User Interface">GUI</abbr> (LuCI) available, you can alternatively upgrade via the command line.
+There are two command line methods for upgrading:
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> <code>sysupgrade</code></div>
+</li>
+<li class="level1"><div class="li"> <code>mtd</code></div>
+</li>
+</ul>
+
+<p>
+Note: It is important that you put the firmware image into the ramdisk (/tmp) before you start flashing.
+</p>
+
+</div>
+
+<h4 id="sysupgrade">sysupgrade</h4>
+<div class="level4">
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Login as root via <abbr title="Secure Shell">SSH</abbr> on 192.168.1.1, then enter the following commands:</div>
+</li>
+</ul>
+<pre class="code">cd /tmp
+wget https://downloads.openwrt.org/snapshots/targets/mediatek/filogic/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-squashfs-sysupgrade.bin
+sysupgrade /tmp/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-squashfs-sysupgrade.bin</pre>
+
+</div>
+
+<h4 id="mtd">mtd</h4>
+<div class="level4">
+
+<p>
+If <code>sysupgrade</code> does not support this router, use <code>mtd</code>.
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Login as root via <abbr title="Secure Shell">SSH</abbr> on 192.168.1.1, then enter the following commands:</div>
+</li>
+</ul>
+<pre class="code">cd /tmp
+wget http://downloads.openwrt.org/snapshots/trunk/XXX/xxx.abc
+mtd write /tmp/xxx.abc linux &amp;&amp; reboot</pre>
+
+</div>
+
+<h2 class="sectionedit23 page-header pb-3 mb-4 mt-0" id="downgrading_stock_firmware">Downgrading stock firmware</h2>
+<div class="level2">
+<div class="wrap_center wrap_round wrap_important plugin_wrap" style="width: 60%;">
+<p>
+This is a legacy OpenWrt installation method and applicable only to the RD03 (Chinese version), and is required only for installing OpenWrt via the “Firmware downgrade method”.
+</p>
+</div>
+<p>
+1. Install Vulnerable Version:
+</p>
+
+<p>
+First, you&#039;ll need to grab a vulnerable software version. The table below shows known vulnerable versions. It is recommended to install version 1.0.47.
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> Firmware Version      </th><th class="col1 leftalign"> Vulnerable?  </th><th class="col2 leftalign"> Download                                                                                       </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> 1.0.64                </td><td class="col1 leftalign"> NO          </td><td class="col2 leftalign"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_14680_1.0.64.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_14680_1.0.64.bin" rel="ugc nofollow">https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_14680_1.0.64.bin</a>  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 1.0.47 (recommended)  </td><td class="col1 leftalign"> YES          </td><td class="col2 leftalign"> <a href="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin" class="urlextern" title="https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin" rel="ugc nofollow">https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin</a>  </td>
+	</tr>
+</table></div>
+
+<p>
+<strong>To downgrade</strong>: navigate to the upload firmware page and select the appropriate software version. It will complain about the downgrade. Edit the url and change the &lt;html&gt;0&lt;/html&gt; at the end to a &lt;html&gt;1&lt;/html&gt; and press enter. Or change to &lt;html&gt;2&lt;/html&gt; if there is already &lt;html&gt;1&lt;/html&gt; (seen on v1.0.64). The downgrade will proceed.
+</p>
+
+<p>
+2. Get ssh access (supported only stock firmware <strong>1.0.47</strong>):
+</p>
+<pre class="code">#!/bin/bash
+
+if [ &quot;$1&quot; = &quot;&quot; ]; then
+  echo &quot;Usage: $0 [stok]&quot;
+  echo &quot;e.g. $0 e6ea114ba2cddb0c70fbbc417bb2706c&quot;
+  echo &quot;Copy the stok-string from a browser&#039;s URL-line, while being logged in to the router&quot;
+  exit 1
+fi
+
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/misystem/arn_switch&quot; -d &quot;open=1&amp;model=1&amp;level=%0Anvram%20set%20ssh_en%3D1%0A&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/misystem/arn_switch&quot; -d &quot;open=1&amp;model=1&amp;level=%0Anvram%20commit%0A&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/misystem/arn_switch&quot; -d &quot;open=1&amp;model=1&amp;level=%0Ased%20-i%20&#039;s%2Fchannel%3D.*%2Fchannel%3D%22debug%22%2Fg&#039;%20%2Fetc%2Finit.d%2Fdropbear%0A&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/misystem/arn_switch&quot; -d &quot;open=1&amp;model=1&amp;level=%0A%2Fetc%2Finit.d%2Fdropbear%20start%0A&quot;
+sleep 1
+curl -X POST &quot;http://192.168.31.1/cgi-bin/luci/;stok=${1}/api/misystem/arn_switch&quot; -d &quot;open=1&amp;model=1&amp;level=%0Apasswd%20-d%20root%0A&quot;</pre>
+
+<p>
+After that, proceed from step 2 in the main <a href="/inbox/toh/xiaomi/ax3000t#installation" class="wikilink1" title="inbox:toh:xiaomi:ax3000t" data-wiki-id="inbox:toh:xiaomi:ax3000t">Installation</a> section.
+</p>
+
+</div>
+
+<h2 class="sectionedit27 page-header pb-3 mb-4 mt-0" id="debricking">Debricking</h2>
+<div class="level2">
+
+<p>
+→ <a href="/docs/guide-user/troubleshooting/generic.debrick" class="wikilink1" title="docs:guide-user:troubleshooting:generic.debrick" data-wiki-id="docs:guide-user:troubleshooting:generic.debrick">generic.debrick</a>
+</p>
+
+<p>
+Assume that you have installed OpenWrt with stock layout, with original u-boot:
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Connect to router via UART</div>
+</li>
+<li class="level1"><div class="li"> Select <em>Load Image</em> in the u-boot</div>
+</li>
+<li class="level1"><div class="li"> Set start address to 0x48000000, then set <abbr title="Trivial File Transfer Protocol">TFTP</abbr> parameters to load the <a href="https://downloads.openwrt.org/snapshots/targets/mediatek/filogic/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-initramfs-kernel.bin" class="urlextern" title="https://downloads.openwrt.org/snapshots/targets/mediatek/filogic/openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-initramfs-kernel.bin" rel="ugc nofollow">initramfs-kernel.bin</a>.</div>
+</li>
+<li class="level1"><div class="li"> Start the loaded kernel, then perform sysupgrade on OpenWrt.</div>
+</li>
+</ul>
+
+<p>
+If you have installed OpenWrt with u-boot mode layout, you can still use above UART recovery procedure, but u-boot will also look for a file called <code>openwrt-mediatek-filogic-xiaomi_mi-router-ax3000t-ubootmod-initramfs-recovery.itb</code> in a tftp server at <abbr title="Internet Protocol">IP</abbr> address 192.168.1.254
+</p>
+
+<p>
+If you provide that file in a tftp server, it&#039;ll be automatically loaded and run, so system can be recovered without using a UART connection.
+</p>
+
+</div>
+
+<h3 class="sectionedit28 page-header pb-3 mb-4 mt-0" id="recover_bricked_bootloader">Recover bricked bootloader</h3>
+<div class="level3">
+
+<p>
+If your bootloader is bricked you can use the Mediateks ability to load a bootloader directly over UART with a tool called mtk_uartboot.
+</p>
+
+<p>
+Details explained in <a href="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/860" class="urlextern" title="https://forum.openwrt.org/t/openwrt-support-for-xiaomi-ax3000t/180490/860" rel="ugc nofollow">this forum post</a>
+</p>
+
+</div>
+
+<h3 class="sectionedit29 page-header pb-3 mb-4 mt-0" id="tftp_instructions_for_the_stock_layout">TFTP instructions for the stock layout</h3>
+<div class="level3">
+
+<p>
+AX3000T can be recovered from a soft-brick with <abbr title="Trivial File Transfer Protocol">TFTP</abbr>. The flow is:
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> The router boots and asks for an <abbr title="Internet Protocol">IP</abbr> address on the <abbr title="Local Area Network">LAN</abbr> ports via <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr></div>
+</li>
+<li class="level1"><div class="li"> The <abbr title="Trivial File Transfer Protocol">TFTP</abbr> server assigns an <abbr title="Internet Protocol">IP</abbr> address to the router</div>
+</li>
+<li class="level1"><div class="li"> The router then connects to the <abbr title="Trivial File Transfer Protocol">TFTP</abbr> server (where your <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr> server listen, e.g.: 192.168.31.100) and tries to download a file named with the <abbr title="Internet Protocol">IP</abbr> address given by the <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr> server converted to hexadecimal.</div>
+</li>
+</ul>
+
+<p>
+Because of this quirk we will have to configure the tftp server to assign only one <abbr title="Internet Protocol">IP</abbr> and we will set the file name to the only <abbr title="Internet Protocol">IP</abbr> address it can receive.
+</p>
+
+<p>
+For Windows you can use <a href="https://bitbucket.org/phjounin/tftpd64/downloads/tftpd64.464.zip" class="urlextern" title="https://bitbucket.org/phjounin/tftpd64/downloads/tftpd64.464.zip" rel="ugc nofollow">tftpd64</a> and on Linux you can use dnsmasq.
+These are the steps to do it for Linux (this can be adapted to the tftpd64&#039;s graphical interface very easily):
+</p>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Create a folder somewhere to place your firmware for the tftp server and download the OEM firmware (the file name is a very important part; depending on the previously installed Xiaomi firmware version, you may need to adjust the name of the .img file to a different one. The router will be looking for a specific file name on the tftp server – if the requested file in the terminal does not match the one you have in the tmp folder, rename it accordingly and proceed again):<pre class="code">mkdir -p /tmp/tftp
+wget https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/rd03/miwifi_rd03_firmware_ef0ee_1.0.47.bin -O /tmp/tftp/C0A81F02.img</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> To ensure that the <abbr title="Trivial File Transfer Protocol">TFTP</abbr> server has access to the firmware, set the privileges:<pre class="code">sudo chmod -R 755 /tmp/tftp
+sudo chown -R nobody:nogroup /tmp/tftp</pre>
+</div>
+</li>
+</ul>
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Obtain the name of the ethernet adapter (to be used in further steps):<pre class="code">ip link</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> The result will loke something like (in this case, the name of the ethernet adapter is enp2s0):<pre class="code">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp2s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff
+3: wlp3s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000
+    link/ether yy:yy:yy:yy:yy:yy brd ff:ff:ff:ff:ff:ff</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> Set a static address on your PC to serve the firmware from: <pre class="code">sudo ip address flush dev &lt;adapter name&gt;
+sudo ip address add 192.168.31.100/24 dev &lt;adapter name&gt;</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> Run the server with the following command:<pre class="code">sudo dnsmasq --no-daemon --listen-address=192.168.31.100 --bind-interfaces --dhcp-range=192.168.31.2,192.168.31.254 --enable-tftp --tftp-root=/tmp/tftp --log-dhcp --log-facility=-</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> Unplug the power, press and hold the reset button, plug the power back while still holding the button.<div class="wrap_info plugin_wrap"><ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Hold the reset button until the router&#039;s LED starts flashing orange. </div>
+</li>
+<li class="level1"><div class="li"> then it goes solid orange again, release the button.</div>
+</li>
+<li class="level1"><div class="li"> If in the terminal, you see that the router requests a different firmware file (different name), rename the .img file in the tmp folder accordingly and repeat the procedures from the <abbr title="Internet Protocol">IP</abbr> flush again.</div>
+</li>
+</ul>
+</div></div>
+</li>
+<li class="level1"><div class="li"> When the device finished loading the firmware, the led starts flashing with orange (amber) light. Wait for until blue led to goes solid! <div class="wrap_info plugin_wrap"><ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> It might take some time for the led to go solid blue</div>
+</li>
+<li class="level1"><div class="li"> If the recovery doesn&#039;t accept the downloaded file the led switches to solid white - if this is the case, restart the recovery process with other file</div>
+</li>
+<li class="level1"><div class="li"> If the led is blinking blue led it means the device was flashed successfully and can be restarted</div>
+</li>
+</ul>
+</div></div>
+</li>
+<li class="level1"><div class="li"> Put your interface back to <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr> mode and start again with breaking your device</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit34 page-header pb-3 mb-4 mt-0" id="failsafe_mode">Failsafe mode</h2>
+<div class="level2">
+
+<p>
+→ <a href="/docs/guide-user/troubleshooting/failsafe_and_factory_reset" class="wikilink1" title="docs:guide-user:troubleshooting:failsafe_and_factory_reset" data-wiki-id="docs:guide-user:troubleshooting:failsafe_and_factory_reset">failsafe_and_factory_reset</a>
+</p>
+
+</div>
+
+<h2 class="sectionedit35 page-header pb-3 mb-4 mt-0" id="basic_configuration">Basic configuration</h2>
+<div class="level2">
+
+<p>
+→ <a href="/docs/guide-user/base-system/start" class="wikilink1" title="docs:guide-user:base-system:start" data-wiki-id="docs:guide-user:base-system:start">Basic configuration</a> After flashing, proceed with this.<br/>
+
+Set up your Internet connection, configure wireless, configure USB port, etc.
+</p>
+
+</div>
+
+<h2 class="sectionedit36 page-header pb-3 mb-4 mt-0" id="specific_configuration">Specific Configuration</h2>
+<div class="level2">
+
+</div>
+
+<h3 class="sectionedit37 page-header pb-3 mb-4 mt-0" id="network_interfaces">Network interfaces</h3>
+<div class="level3">
+
+<p>
+The default network configuration is:
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> Interface Name </th><th class="col1 leftalign"> Description        </th><th class="col2"> Default configuration </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> br-lan         </td><td class="col1 leftalign"> <abbr title="Local Area Network">LAN</abbr> &amp; WiFi         </td><td class="col2 leftalign"> 192.168.1.1/24        </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> lanX (eth0)    </td><td class="col1"> <abbr title="Local Area Network">LAN</abbr> ports (2 to 4) </td><td class="col2 leftalign"> None                  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> wan (eth0)     </td><td class="col1 leftalign"> <abbr title="Wide Area Network">WAN</abbr> port           </td><td class="col2 leftalign"> <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr>                  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> phy0-ap0       </td><td class="col1 leftalign"> WiFi 2.4G          </td><td class="col2 leftalign"> Disabled              </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> phy1-ap0       </td><td class="col1 leftalign"> WiFi 5G            </td><td class="col2 leftalign"> Disabled              </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h3 class="sectionedit39 page-header pb-3 mb-4 mt-0" id="switch_ports_for_vlans">Switch Ports (for VLANs)</h3>
+<div class="level3">
+
+<p>
+Numbers 2-4 are Ports 1-3 as labeled on the unit, number 4 is the Internet (<abbr title="Wide Area Network">WAN</abbr>) on the unit, 0 is the internal connection to the router itself.
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> Port             </th><th class="col1"> Switch port </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> Internet (<abbr title="Wide Area Network">WAN</abbr>)   </td><td class="col1 leftalign"> 1           </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <abbr title="Local Area Network">LAN</abbr> 2            </td><td class="col1 leftalign"> 2           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <abbr title="Local Area Network">LAN</abbr> 3            </td><td class="col1 leftalign"> 3           </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <abbr title="Local Area Network">LAN</abbr> 4            </td><td class="col1 leftalign"> 4           </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h3 class="sectionedit41 page-header pb-3 mb-4 mt-0" id="buttons">Buttons</h3>
+<div class="level3">
+
+<p>
+→ <a href="/docs/guide-user/hardware/hardware.button" class="wikilink1" title="docs:guide-user:hardware:hardware.button" data-wiki-id="docs:guide-user:hardware:hardware.button">hardware.button</a> on howto use and configure the hardware button(s).
+Here, we merely name the buttons, so we can use them in the above Howto.
+</p>
+
+<p>
+The Xiaomi AX3000T has the following buttons:
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> BUTTON  </th><th class="col1 leftalign"> Event   </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> Reset   </td><td class="col1 centeralign">  reset  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Mesh    </td><td class="col1 centeralign">  BTN_9  </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h2 class="sectionedit43 page-header pb-3 mb-4 mt-0" id="hardware">Hardware</h2>
+<div class="level2">
+
+</div>
+
+<h3 class="sectionedit44 page-header pb-3 mb-4 mt-0" id="info">Info</h3>
+<div class="level3">
+
+<p>
+<!-- ToH: {
+  "source": "json",
+  "dom": "t",
+  "paging": false,
+  "rotate": true,
+  "shownColumns": ["brand", "model", "version", "devicetype", "availability", "supportedsincecommit", "supportedsincerel", "supportedcurrentrel", "unsupported_functions", "bootloader", "cpu", "target", "cpumhz", "flashmb", "rammb", "switch", "ethernet100mports", "ethernet1gports", "commentsnetworkports", "modem", "vlan", "wlan24ghz", "wlan50ghz", "wlanhardware", "wlancomments", "detachableantennas", "usbports", "sataports", "commentsusbsataports", "serial", "jtag", "ledcount", "buttoncount", "powersupply", "deviceid", "owrt_forum_topic_url", "wikideviurl", "oemdevicehomepageurl", "firmwareoemstockurl", "firmwareopenwrtinstallurl", "firmwareopenwrtupgradeurl", "comments"],
+  "filterColumns": {"brand": "^Xiaomi$", "model": "^AX3000T$"}
+} -->
+</p>
+
+</div>
+
+<h3 class="sectionedit45 page-header pb-3 mb-4 mt-0" id="photos">Photos</h3>
+<div class="level3">
+
+
+
+<p>
+<em>Front:</em><br/>
+
+<strong>Insert photo of front of the casing</strong>
+</p>
+
+<p>
+<em>Back:</em><br/>
+
+<strong>Insert photo of back of the casing</strong>
+</p>
+
+<p>
+<em>Backside label:</em><br/>
+
+<strong>Insert photo of backside label</strong>
+</p>
+
+</div>
+
+<h3 class="sectionedit46 page-header pb-3 mb-4 mt-0" id="opening_the_case">Opening the case</h3>
+<div class="level3">
+
+<p>
+<strong>Note:</strong> This will void your warranty!
+</p>
+<div class="wrap_box plugin_wrap"><ol class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> Remove 4 rubber feet on the bottom of the device</div>
+</li>
+<li class="level1"><div class="li"> Use a Phillips screwdriver to remove the 4 screws</div>
+</li>
+<li class="level1"><div class="li"> A tiny flathead or plastic pry tool can be wedged in between the bottom case by the antennas. Gently push and slide it along the groove and it will pop open.</div>
+</li>
+</ol>
+</div>
+<p>
+<em>Main PCB:</em><br/>
+
+<strong>Insert photo of PCB</strong>
+</p>
+
+</div>
+
+<h3 class="sectionedit49 page-header pb-3 mb-4 mt-0" id="serial">Serial</h3>
+<div class="level3">
+
+<p>
+→ <a href="/docs/techref/hardware/port.serial" class="wikilink1" title="docs:techref:hardware:port.serial" data-wiki-id="docs:techref:hardware:port.serial">port.serial</a> general information about the serial port, serial port cable, etc.
+</p>
+
+<p>
+How to connect to the Serial Port of this specific device:<br/>
+
+<a href="/_media/media/xiaomi/xiaomi_ax3000t_uart.jpg" class="media" title="media:xiaomi:xiaomi_ax3000t_uart.jpg"><img src="/_media/media/xiaomi/xiaomi_ax3000t_uart.jpg?w=600&amp;tok=0bd105" class="media img-responsive" loading="lazy" alt="" width="600" /></a>
+</p>
+<div class="table-responsive"><table class="inline table table-striped table-bordered table-condensed">
+	<tr class="row0">
+		<th class="col0"> Serial connection parameters<br/>
+for Xiaomi AX3000T </th><td class="col1"> 115200, 8N1, 3.3V </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h3 class="sectionedit51 page-header pb-3 mb-4 mt-0" id="jtag">JTAG</h3>
+<div class="level3">
+
+<p>
+→ <a href="/docs/techref/hardware/port.jtag" class="wikilink1" title="docs:techref:hardware:port.jtag" data-wiki-id="docs:techref:hardware:port.jtag">port.jtag</a> general information about the JTAG port, JTAG cable, etc.
+</p>
+
+<p>
+How to connect to the JTAG Port of this specific device:<br/>
+
+<strong>Insert photo of PCB with markings for JTAG port</strong>
+</p>
+
+</div>
+
+<h2 class="sectionedit52 page-header pb-3 mb-4 mt-0" id="bootloader_mods">Bootloader mods</h2>
+<div class="level2">
+
+<p>
+→ <a href="/docs/techref/bootloader" class="wikilink1" title="docs:techref:bootloader" data-wiki-id="docs:techref:bootloader">bootloader</a>
+</p>
+
+</div>
+
+<h2 class="sectionedit53 page-header pb-3 mb-4 mt-0" id="hardware_mods">Hardware mods</h2>
+<div class="level2">
+
+</div>
+
+<h2 class="sectionedit54 page-header pb-3 mb-4 mt-0" id="bootlogs">Bootlogs</h2>
+<div class="level2">
+
+</div>
+
+<h2 class="sectionedit55 page-header pb-3 mb-4 mt-0" id="notes">Notes</h2>
+<div class="level2">
+<ul class=" fix-media-list-overlap">
+<li class="level1"><div class="li"> DC power barrel plug dimensions 4.0mm x 1.7mm.</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit56 page-header pb-3 mb-4 mt-0" id="tags">Tags</h2>
+<div class="level2">
+<div class="tags"><span>
+	<a href="/tag/mediatek?do=showtag&amp;tag=mediatek" class="wikilink1 tag label label-default mx-1" title="tag:mediatek" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> mediatek</a>,
+	<a href="/tag/mt7981?do=showtag&amp;tag=MT7981" class="wikilink1 tag label label-default mx-1" title="tag:mt7981" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> MT7981</a>,
+	<a href="/tag/128nand?do=showtag&amp;tag=128NAND" class="wikilink1 tag label label-default mx-1" title="tag:128nand" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 128NAND</a>,
+	<a href="/tag/256ram?do=showtag&amp;tag=256RAM" class="wikilink1 tag label label-default mx-1" title="tag:256ram" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 256RAM</a>,
+	<a href="/tag/4port?do=showtag&amp;tag=4Port" class="wikilink1 tag label label-default mx-1" title="tag:4port" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4Port</a>,
+	<a href="/tag/gigabitethernet?do=showtag&amp;tag=GigabitEthernet" class="wikilink1 tag label label-default mx-1" title="tag:gigabitethernet" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> GigabitEthernet</a>,
+	<a href="/tag/0usb?do=showtag&amp;tag=0usb" class="wikilink1 tag label label-default mx-1" title="tag:0usb" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 0usb</a>,
+	<a href="/tag/4core?do=showtag&amp;tag=4core" class="wikilink1 tag label label-default mx-1" title="tag:4core" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4core</a>,
+	<a href="/tag/4x4?do=showtag&amp;tag=4x4" class="wikilink1 tag label label-default mx-1" title="tag:4x4" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4x4</a>,
+	<a href="/tag/hwvlan?do=showtag&amp;tag=hwVLAN" class="wikilink1 tag label label-default mx-1" title="tag:hwvlan" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> hwVLAN</a>,
+	<a href="/tag/802.11ax?do=showtag&amp;tag=802.11ax" class="wikilink1 tag label label-default mx-1" title="tag:802.11ax" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 802.11ax</a>,
+	<a href="/tag/wifi6?do=showtag&amp;tag=wifi6" class="wikilink1 tag label label-default mx-1" title="tag:wifi6" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> wifi6</a>,
+	<a href="/tag/u-boot?do=showtag&amp;tag=u-boot" class="wikilink1 tag label label-default mx-1" title="tag:u-boot" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> u-boot</a>,
+	<a href="/tag/armv8?do=showtag&amp;tag=ARMv8" class="wikilink1 tag label label-default mx-1" title="tag:armv8" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> ARMv8</a>,
+	<a href="/tag/cortexa53?do=showtag&amp;tag=cortexa53" class="wikilink1 tag label label-default mx-1" title="tag:cortexa53" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> cortexa53</a>,
+	<a href="/tag/filogic?do=showtag&amp;tag=Filogic" class="wikilink1 tag label label-default mx-1" title="tag:filogic" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> Filogic</a>,
+	<a href="/tag/serial?do=showtag&amp;tag=Serial" class="wikilink1 tag label label-default mx-1" title="tag:serial" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> Serial</a>,
+	<a href="/tag/12v_powered?do=showtag&amp;tag=12v_powered" class="wikilink1 tag label label-default mx-1" title="tag:12v_powered" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 12v powered</a>
+</span></div>
+
+</div>
+<div class="cookielaw-banner cookielaw-bottom">This website uses cookies. By using the website, you agree with storing cookies on your computer. Also you acknowledge that you have read and understand our Privacy Policy. If you do not agree leave the website.<button>OK</button><a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">More information about cookies</a></div></div><!-- /content --></div><a href="/tag/mediatek?do=showtag&amp;tag=mediatek" class="wikilink1 tag label label-default mx-1" title="tag:mediatek" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> mediatek</a><a href="/tag/mt7981?do=showtag&amp;tag=mt7981" class="wikilink1 tag label label-default mx-1" title="tag:mt7981" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> mt7981</a><a href="/tag/128nand?do=showtag&amp;tag=128nand" class="wikilink1 tag label label-default mx-1" title="tag:128nand" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 128nand</a><a href="/tag/256ram?do=showtag&amp;tag=256ram" class="wikilink1 tag label label-default mx-1" title="tag:256ram" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 256ram</a><a href="/tag/4port?do=showtag&amp;tag=4port" class="wikilink1 tag label label-default mx-1" title="tag:4port" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4port</a><a href="/tag/gigabitethernet?do=showtag&amp;tag=gigabitethernet" class="wikilink1 tag label label-default mx-1" title="tag:gigabitethernet" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> gigabitethernet</a><a href="/tag/0usb?do=showtag&amp;tag=0usb" class="wikilink1 tag label label-default mx-1" title="tag:0usb" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 0usb</a><a href="/tag/4core?do=showtag&amp;tag=4core" class="wikilink1 tag label label-default mx-1" title="tag:4core" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4core</a><a href="/tag/4x4?do=showtag&amp;tag=4x4" class="wikilink1 tag label label-default mx-1" title="tag:4x4" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 4x4</a><a href="/tag/hwvlan?do=showtag&amp;tag=hwvlan" class="wikilink1 tag label label-default mx-1" title="tag:hwvlan" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> hwvlan</a><a href="/tag/802.11ax?do=showtag&amp;tag=802.11ax" class="wikilink1 tag label label-default mx-1" title="tag:802.11ax" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 802.11ax</a><a href="/tag/wifi6?do=showtag&amp;tag=wifi6" class="wikilink1 tag label label-default mx-1" title="tag:wifi6" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> wifi6</a><a href="/tag/u-boot?do=showtag&amp;tag=u-boot" class="wikilink1 tag label label-default mx-1" title="tag:u-boot" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> u-boot</a><a href="/tag/armv8?do=showtag&amp;tag=armv8" class="wikilink1 tag label label-default mx-1" title="tag:armv8" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> armv8</a><a href="/tag/cortexa53?do=showtag&amp;tag=cortexa53" class="wikilink1 tag label label-default mx-1" title="tag:cortexa53" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> cortexa53</a><a href="/tag/filogic?do=showtag&amp;tag=filogic" class="wikilink1 tag label label-default mx-1" title="tag:filogic" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> filogic</a><a href="/tag/serial?do=showtag&amp;tag=serial" class="wikilink1 tag label label-default mx-1" title="tag:serial" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> serial</a><a href="/tag/12v_powered?do=showtag&amp;tag=12v_powered" class="wikilink1 tag label label-default mx-1" title="tag:12v_powered" rel="tag"><span class="iconify"  data-icon="mdi:tag-text-outline"></span> 12v powered</a>
+                    </div>
+                </div>
+
+                <div class="small text-right">
+
+                                        <span class="docInfo">
+                        <ul class="list-inline"><li><span class="iconify text-muted"  data-icon="mdi:calendar"></span> Last modified: <span title="2024/09/27 21:40">2024/09/27 21:40</span></li><li class="text-muted">by <bdi>alexq</bdi></li></ul>                    </span>
+                    
+                    
+                </div>
+
+            </article>
+
+            
+        </div>
+
+    </main>
+
+    <footer id="dw__footer" class="dw-container py-5 dokuwiki container-fluid">
+        <!-- footer -->
+<div class="dw-container small container-fluid mx-5">
+
+    
+    <div class="footer-dw-title">
+                <!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_start&quot;,&quot;hid&quot;:&quot;&quot;,&quot;secid&quot;:1,&quot;range&quot;:&quot;0-&quot;} --><div class="wrap_center wrap_centeralign wrap_box plugin_wrap" style="width: 100%;">
+<p>
+<strong>Self-registration in the wiki has been disabled.<br/>
+If you want to contribute to the OpenWrt wiki, please post <a href="https://forum.openwrt.org/t/applying-for-openwrt-wiki-account/101671" class="urlextern" title="https://forum.openwrt.org/t/applying-for-openwrt-wiki-account/101671" rel="ugc nofollow">HERE</a> in the forum or ask on <abbr title="Internet Relay Chat">IRC</abbr> for access.</strong>
+</p>
+</div><!-- EDIT{&quot;target&quot;:&quot;plugin_wrap_end&quot;,&quot;hid&quot;:&quot;&quot;,&quot;secid&quot;:2,&quot;range&quot;:&quot;0-&quot;} -->    </div>
+
+    <div class="footer-license row">
+        <hr/>
+        <div id="dw__license" class="col-sm-6">
+                        <p>
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" title="CC Attribution-Share Alike 4.0 International" target="" itemscope itemtype="http://schema.org/CreativeWork" itemprop="license" rel="license" class="license"><img src="/lib/tpl/bootstrap3/images/license/cc.png" width="24" height="24" alt="cc" /> <img src="/lib/tpl/bootstrap3/images/license/by.png" width="24" height="24" alt="by" /> <img src="/lib/tpl/bootstrap3/images/license/sa.png" width="24" height="24" alt="sa" /> </a>            </p>
+            <p class="small">
+                Except where otherwise noted, content on this wiki is licensed under the following license:<br/><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" title="CC Attribution-Share Alike 4.0 International" target="" itemscope itemtype="http://schema.org/CreativeWork" itemprop="license" rel="license" class="license">CC Attribution-Share Alike 4.0 International</a>            </p>
+                    </div>
+
+        <div class="col-sm-6">
+                    </div>
+
+    </div>
+
+</div>
+<!-- /footer -->
+    </footer>
+
+    <a href="#dokuwiki__top" class="back-to-top hidden-print btn btn-default" title="skip to content" accesskey="t">
+        <span class="iconify"  data-icon="mdi:chevron-up"></span>    </a>
+
+    <div id="screen__mode">        <span class="visible-xs-block"></span>
+        <span class="visible-sm-block"></span>
+        <span class="visible-md-block"></span>
+        <span class="visible-lg-block"></span>
+    </div>
+
+    <img src="/lib/exe/taskrunner.php?id=inbox%3Atoh%3Axiaomi%3Aax3000t&amp;1727684410" width="2" height="1" alt="" />
+</div>
+
+</body>
+</html>
